@@ -1,6 +1,7 @@
 ---
 published: true
 ---
+![](https://raw.githubusercontent.com/io-hack/io-hack.github.io/master/dl/fbtft_img_0.jpg)
 ## 使用设备
 - 全志H3 Orangepi Lite
 - 中景园 IPS 240x240 1.14寸 st7789v
