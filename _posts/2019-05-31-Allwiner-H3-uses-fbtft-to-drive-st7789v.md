@@ -37,7 +37,7 @@ published: true
   │   Depends on: STAGING [=y] && FB_TFT [=y
 
 ## 3.添加中景园屏具体参数到fbtft驱动
-# 3.1 编辑文件 linux-4.20.17/drivers/staging/fbtft/fbtft_device.c
+### 3.1 编辑文件 linux-4.20.17/drivers/staging/fbtft/fbtft_device.c
 移植中景园官方例程序参数置文件该文件内
 static const s16 ips13_init_sequence[] = {
 	-1, 0x36, 0x00,
@@ -60,7 +60,7 @@ static const s16 ips13_init_sequence[] = {
 	-3,
 };
 
-# 3.2 添加屏幕直设备列表 static struct fbtft_device_display displays[]
+### 3.2 添加屏幕直设备列表 static struct fbtft_device_display displays[]
 {
 		.name = "ips13",
 		.spi = &(struct spi_board_info) {
@@ -78,11 +78,22 @@ static const s16 ips13_init_sequence[] = {
 					.gamma_len = 0,
 				},
 				.gpios = (const struct fbtft_gpio []) {
-					{ "reset", 6 },
-					{ "dc", 11 },
-					{ "led", 12 },
+					{ "reset", 6 }, //PA6
+					{ "dc", 11 }, //PA11
+					{ "led", 12 }, //PA12
 					{},
 				},
 			}
 		}
 	},
+
+## 4.编译内核
+- 编译内核
+- 拷贝相关编译目标文件置目标文件系统
+
+## 5.启动fbtft
+### 5.1 启动tftfb内核模块
+modprobe fbtft_device name=ips13 busnum=0 speed=99999999 fps=60
+
+### 5.2 查看设备
+ls /dev/fb*
