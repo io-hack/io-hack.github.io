@@ -14,9 +14,11 @@ published: true
 - 配置SPI0引脚上拉，防止电平干扰(这是个坑，调了很久发现是干扰) 节点spi0_pins: spi0 添加 bias-pull-up;
 
 ## 2.配置内核
+### 2.1
 Symbol: STAGING [=y]                                                    │  
   │ Type  : bool                                                            │  
   │ Prompt: Staging drivers                                                 │  
   │   Location:                                                             │  
   │ (1) -> Device Drivers                                                   │  
   │   Defined at drivers/staging/Kconfig:1 
+### 2.2
