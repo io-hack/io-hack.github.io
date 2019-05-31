@@ -37,7 +37,7 @@ published: true
   │   Depends on: STAGING [=y] && FB_TFT [=y
 
 ## 3.添加中景园屏具体参数到fbtft驱动
-- 编辑文件 linux-4.20.17/drivers/staging/fbtft/fbtft_device.c
+# 3.1 编辑文件 linux-4.20.17/drivers/staging/fbtft/fbtft_device.c
 移植中景园官方例程序参数置文件该文件内
 static const s16 ips13_init_sequence[] = {
 	-1, 0x36, 0x00,
@@ -60,7 +60,7 @@ static const s16 ips13_init_sequence[] = {
 	-3,
 };
 
-- 添加屏幕直设备列表 static struct fbtft_device_display displays[]
+# 3.2 添加屏幕直设备列表 static struct fbtft_device_display displays[]
 {
 		.name = "ips13",
 		.spi = &(struct spi_board_info) {
