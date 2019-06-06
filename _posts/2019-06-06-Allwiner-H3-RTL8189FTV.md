@@ -157,8 +157,7 @@ static u16 rtw_select_queue(struct net_device *dev, struct sk_buff *skb
 
 ## 4.启动RTL8189FTV
 - insmod 8189fs.ko
-- 查看设备
-
+- 查看设备 <br/>
 ```
 [root@OrangePi_Lite /]# ifconfig -a                                                                 
 lo        Link encap:Local Loopback                                                                 
