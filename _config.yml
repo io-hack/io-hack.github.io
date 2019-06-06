@@ -54,6 +54,8 @@ baseurl: "https://io-hack.github.io"
 #
 
 permalink: /:title/
+markdown:redcarpet
+
 
 # The release of Jekyll Now that you're using
 version: v1.2.0
