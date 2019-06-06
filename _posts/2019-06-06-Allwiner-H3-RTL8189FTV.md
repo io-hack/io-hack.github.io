@@ -182,3 +182,8 @@ wlan1     Link encap:Ethernet  HWaddr 02:81:51:A3:6B:48
           collisions:0 txqueuelen:1000                                                              
           RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)  
 ```
+
+## 5.启动与扫描无线网络
+- ifconfig wlan0 up
+- iwlist scanning
+
