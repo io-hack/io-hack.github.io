@@ -161,4 +161,4 @@ static u16 rtw_select_queue(struct net_device *dev, struct sk_buff *skb
 
 ## 5.启动与扫描无线网络
 - ifconfig wlan0 up
-- iwlist scanning
+- iwlist wlan0 scanning
