@@ -1,7 +1,4 @@
 ---
-published: false
----
----
 published: true
 title: 全志H3移植Linux4.20.17的RTL8189FTV驱动
 ---
