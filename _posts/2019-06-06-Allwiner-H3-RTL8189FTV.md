@@ -157,31 +157,7 @@ static u16 rtw_select_queue(struct net_device *dev, struct sk_buff *skb
 
 ## 4.启动RTL8189FTV
 - insmod 8189fs.ko
-- 查看设备
-```
-[root@OrangePi_Lite /]# ifconfig -a                                           \                       
-lo        Link encap:Local Loopback                                                                 
-          inet addr:127.0.0.1  Mask:255.0.0.0                                                       
-          UP LOOPBACK RUNNING  MTU:65536  Metric:1                                                  
-          RX packets:0 errors:0 dropped:0 overruns:0 frame:0                                        
-          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0                                      
-          collisions:0 txqueuelen:1000                                                              
-          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)                                                    
-                                                                                                    
-wlan0     Link encap:Ethernet  HWaddr 02:81:51:A3:6B:48                                             
-          BROADCAST MULTICAST  MTU:1500  Metric:1                                                   
-          RX packets:0 errors:0 dropped:0 overruns:0 frame:0                                        
-          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0                                      
-          collisions:0 txqueuelen:1000                                                              
-          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)                                                    
-                                                                                                    
-wlan1     Link encap:Ethernet  HWaddr 02:81:51:A3:6B:48                                             
-          BROADCAST MULTICAST  MTU:1500  Metric:1                                                   
-          RX packets:0 errors:0 dropped:0 overruns:0 frame:0                                        
-          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0                                      
-          collisions:0 txqueuelen:1000                                                              
-          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)  
-```
+- 查看设备 iwconfig
 
 ## 5.启动与扫描无线网络
 - ifconfig wlan0 up
