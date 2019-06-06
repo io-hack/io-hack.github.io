@@ -68,8 +68,6 @@ MODALIAS=sdio:c07v024CdF179
 - CONFIG_RTL8188F = y
 - CONFIG_SDIO_HCI = y
 - CONFIG_PLATFORM_ARM_SUNxI = y
-
-
 ```
 ifeq ($(CONFIG_PLATFORM_ARM_SUNxI), y)
 EXTRA_CFLAGS += -DCONFIG_LITTLE_ENDIAN
@@ -161,7 +159,7 @@ static u16 rtw_select_queue(struct net_device *dev, struct sk_buff *skb
 - insmod 8189fs.ko
 - 查看设备
 ```
-[root@OrangePi_Lite /]# ifconfig -a                                                                 
+[root@OrangePi_Lite /]# ifconfig -a                                           \                       
 lo        Link encap:Local Loopback                                                                 
           inet addr:127.0.0.1  Mask:255.0.0.0                                                       
           UP LOOPBACK RUNNING  MTU:65536  Metric:1                                                  
